@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalhinho longo do marcio</title>
 </head>
 <body>
+     <header>
+    <nav>
+      <ul>
+        <li><a href="#cascata">Cascata</a></li>
+        <li><a href="#especificidade">Especificidade</a></li>
+        <li><a href="#combinacao">Combinação de seletores</a></li>
+        <li><a href="#pseudo">Pseudo-classes</a></li>
+        <li><a href="#displays">Displays</a></li>
+        <li><a href="#propriedades">Propriedades</a></li>
+        <li><a href="#box">box-sizing: border-box</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Atividade parte 2</h1>
+    <section id="cascata">
+      <h2>Cascata</h2>
+      <p>A regra da cascata no CSS significa que ele é lido de cima para baixo, prevalecendo sempre as últimas propriedades.</p>
+    </section>
+
+    <section id="especificidade">
+      <h2>Especificidade</h2>
+      <p>Os seletores mais específicos possuem mais pontos que os menos específicos, os pontos servem para medir a importancia, logo eles são mais importantes.</p>
+       <h3>Pontuação</h3>
+        <ul>
+            <li>seletor pela tag: 1 ponto</li>
+            <li>seletor pela classe: 10 pontos</li>
+            <li>seletor pelo id: 100 pontos</li>
+        </ul>
+      
+    </section>
+
+    <section id="combinacao">
+        <h2>Combinação dos seletores</h2>
+            <h3>.primeira h1</h3>
+                <p>seleciona todos os h1 dentro da classe "primeira".</p>
+            <h3>.primeira > h1</h3>
+                <p>serve para todos os h1 que são "filhos" da div com a classe primeira.</p>
+            <h3>.primeira h1 + h1</h3>
+                <p>seleciona todos os h1 que tenham outro h1 antes dele.  </p>
+    </section>
+
+    <section id="pseudo">
+        <h2>Pseudo-classes</h2>
+          <p>São classes que não aparecem no HTML, somente no CSS.</p>
+            <h3>first-child</h3>
+                <p>estiliza apenas o primeiro filho.</p>
+            <h3>last-child</h3>
+                <p>estiliza o último filho.</p>
+            <h3>nth-child()</h3>
+                <p>serve para escolher especificamente qual filho sera estilizado, é indicado por um número de acordo com a ordem do filho.</p>
+            <h3>nth-of-type</h3>
+                <p>mesma funçao no nth-child.</p>
+    </section>
+
+    <section id="displays">
+        <h2>Displays</h2>
+        <h3>display-block</h3>
+            <p>Ocupa todo espaço na linha, width e heigth podem ser aplicadas somente nele e não no display-inline.</p>
+            <h4>Elementos padrão</h4>
+                <ul>
+                    <li>h1</li>
+                    <li>p</li>
+                    <li>div</li>
+                    <li>section</li>
+                    <li>main</li>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>ul</li>
+                    <li>ol</li>
+                </ul>
+        <h3>display-inline</h3>
+            <p>Ocupa apenas o espaço que precisa para existir, funciona na horizontal até o espaço da linha acabar.</p>
+            <h4>Elementos padrão</h4>
+                <ul>
+                    <li>a</li>
+                    <li>em</li>
+                    <li>strong</li>
+                    <li>span</li>
+                </ul>
+    </section>
+
+    <section id="propriedades">
+        <h2>Funções das propriedades: border, padding e margin / shorthand</h2>
+            <h3>Shorthand</h3>
+                <p>Vários valores para a mesma propriedade</p>
+            <h3>Border</h3>
+                <p>Cria uma borda em volta da div.</p>
+                <p>border-width "largura da borda";</p>
+                <p> border-color "cor da borda";</p>
+                <p> border-style "estilo da borda";</p>
+                <p>border: 2px solid red; "tres estilizaçoes"</p>
+
+                      
+            <h3>Padding</h3>
+                <p>Cria um espaço entre o conteúdo e a borda.</p>
+
+                <h4>1 valor</h4>
+                    <p>espaço nele todo</p>
+                <h4>2 valores</h4>
+                    <p>primeiro valor: em cima e em baixo</p>
+                    <p>segundo valor: dos lados</p>
+                <h4>3 valores</h4>
+                    <p>primeiro valor em cima</p>
+                    <p>segundo valor na direita</p>
+                    <p>terceiro valor em baixo</p>
+                    <p>quarto valor na esquerda</p>
+                 <h4>4 valores</h4>
+                    <p>primeiro valor em cima</p>
+                    <p>segundo valor dos lados</p>
+                    <p>terceiro valor em baixo</p>
+
+                    
+            <h3>Margin</h3>
+                <p>Cria um espaço fora do elemento</p>
+                <p>Mesmas propriedades do elemento</p>
+
+                <h4>block</h4>
+                <h5>1 valor</h5>
+                <p>em cima e em baixo </p>
+                <h5>2 valores</h5>
+                <p>primeiro valor em cima</p>
+                <p>segundo valor em baixo</p>
+
+                <h4>inline</h4>
+                <h5>1 valor</h5>
+                <p>dos dois lados</p>
+                <h5>2 valores</h5>
+                <p>primeiro valor na esquerda</p>
+                <p>segundo valor na direita</p>
+
+                <h4>bottom</h4>
+                <p>em cima</p>
+                <h4>top</h4>
+                <p>em baixo</p>
+                <h4>left</h4>
+                <p>esquerda</p>
+                <h4>rigth</h4>
+                <p>direita</p>
+                
+    </section>
+
+    <section id="box">
+        <h2>box-sizing: border-box</h2>
+        <p>Respeita a altura e a largura colocada, fazendo os ajustes necessários para que se adeuque</p>
+    </section>
+</main>
     
 </body>
 </html>
