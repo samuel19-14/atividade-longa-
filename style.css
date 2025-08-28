@@ -1,4 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: gainsboro;
+}
+
+h1 {
+    text-align: center;
+}
 #combinacao h3 {
     color: red;
+}
+
+.subs {
+    font-size: larger;
+    font-weight: 900;
+}
+
+#shor {
+    font-weight: 300;
+    font-size: 23px;
+    color: red;
+}
+
+h2 {
+    font-size: 28px;
+    border: solid red;
+    display: inline-block;
+}
+
+.sla {
+    font-size: 16px;
+    font-weight: 800;
+    color: green;
+}
+
+#pseudo h3 {
+    color: blue;
 }
 
